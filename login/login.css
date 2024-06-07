@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+   
+}
+
+body{
+    background-color: rgba(244,244,244,255);
+}
+
+#divLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    width: 700px;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0,0.2);
+    background-color: white;
+}
+
+#divLogin input{
+    width: 400px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#divLogin input::placeholder{
+    font-size: larger;
+}
+
+#divLogin button{
+    padding: 10px;
+    border-radius: 100px;
+    width: 150px;
+    background-color: rgb(0, 20, 45);
+    font-size: larger;
+    color: white;
+    transition: .5s;
+}
+
+#divLogin button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: rgb(6, 68, 143);
+   
+}
+
+#linha{
+    width: 300px;
+    border: 1px solid rgb(128, 128, 128,0.3);
+}
+
+#divCriarConta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#divCriarConta h3{
+   font-weight: 100;
+}
+
+#divCriarConta button{
+    width: 400px;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+}
+
+#divCriarConta button:hover{
+    width: 400px;
+    background-color: transparent;
+    color: rgb(6, 68, 143);
+    
+}

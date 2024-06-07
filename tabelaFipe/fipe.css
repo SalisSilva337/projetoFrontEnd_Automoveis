@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#divHeader{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(148, 96, 193);
+}
+
+#logo{
+    height: 150px;
+}
+
+#divRetornar{
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    background-color: rgb(148, 96, 193);
+    color: black;
+    box-shadow: 5px 5px 1px white;
+    transition: .5s;
+}
+
+
+
+#divRetornar:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 0px white;
+}
+
+#divTotal{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    gap: 10px;
+    padding-bottom: 20px;
+    background-color: rgb(0, 20, 45);
+    color: white;
+}
+
+#divCentral{
+    border: 1px solid;
+    width: 1000px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    overflow: auto;
+    background-color: rgb(148, 96, 193);
+    color: rgb(0, 20, 45);
+    box-shadow: 10px 10px 1px white;
+    border-radius: 10px;
+}
+
+#divCentralBotoes{
+    display: flex;
+    gap: 100px;
+}
+
+#divConteudo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 100px;
+}
+
+.botoesOpcoes{
+    height: 300px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(0, 20, 45);
+    color: #ffffff;
+}
+
+.botoesOpcoes:hover{
+   opacity: 0.8;
+   scale: 1.1;
+}
+
+.imgOpcoes{
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(133deg) brightness(102%) contrast(100%);
+}
+
+#divConteudoCarros{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#divConteudoCaminhoes{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.divCadaVeiculo{
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+}
+
+.divCadaVeiculo:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.imgVeiculos{
+    height: 300px;
+    width: 400px;
+}
+button img{
+    width: 100px;
+}
+
+#modal{
+    position: fixed;
+    display: none;
+    background-color: rgb(0, 0, 0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#modalConteudo{
+    background-color: rgb(148, 96, 193);
+    width: 1200px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+#divImgModal{
+    padding: 10px;
+    float: right;
+    position: relative;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#divImgModal img{
+    border-radius: 10px;
+}
+
+#divModelosNomeclaturaModal{
+    width: 570px;
+    justify-content: center;
+    text-align: center;
+}
+
+#divModelosVeiculo{
+    height: 94%;
+    width: 570px;
+    overflow: auto;
+    padding-left: 10px;
+}
+
+#divModelosVeiculo h2:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#modalAnos{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#modalAnosConteudo{
+    background-color: rgb(148, 96, 193);
+    width: 300px;
+    height: 800px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#anoModelo:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#divDescricaoModal{
+    float: right;
+    top: -300px;
+    text-align: center;
+    width: 50%;
+    position: relative;
+  
+}
+
+#fecharModal{
+    color: white;
+    display: none;
+    position: absolute;
+    left: 10px;
+    font-size: 50px;
+    top: 0;
+}
+
+#fecharModal:hover{
+  cursor: pointer;
+}

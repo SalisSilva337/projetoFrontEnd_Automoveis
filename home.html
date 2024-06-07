@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/995dcfb715.js" crossorigin="anonymous"></script>
+    <script src="scriptsAnim/homeAnim.js" defer></script>
+    <script src="home.js" defer></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js" defer></script>
+    <script src="chatSuporte/scriptChat.js" defer></script>
+</head>
+<header>
+    <div id="divHeader">
+        <nav id="navHeader">
+
+            <div class="dropdownAll" id="dropdownCategoriaVeiculos">
+                <button class="botoesHeader">Veículos</button>
+                <div class="dropdownVeiculos">
+                    <div id="dropdownBotoes">
+                        <button class="botoesVeiculos">SUV's</button>
+                        <button class="botoesVeiculos">Picapes</button>
+                        <button class="botoesVeiculos">Elétricos</button>
+                        <button class="botoesVeiculos">Performance</button>
+                        <button class="botoesVeiculos">Comercial</button>
+                        
+                    </div>
+                    <div id="divVeiculos" >
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/showroom/fbr-showroom-ranger-p703-v2.png.dam.full.high.png/1691681133806.png" alt="" class="imgVeiculos">
+                                <h2>Nova Geração Ranger</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/ranger-raptor/showroom/fbr-showroom-ranger-raptor.jpg.dam.full.high.jpg/1700832163575.jpg" alt="" class="imgVeiculos">
+                                <h2>Ranger Raptor</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/maverick/models/fx4/fbr-showroom-maverick.jpg.dam.full.high.jpg/1712867686782.jpg" alt="" class="imgVeiculos">
+                                <h2>Maverick</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/maverick/models/hybrid/fbr-showroom-maverick%20hibrida.jpg.dam.full.high.jpg/1712867691940.jpg" alt="" class="imgVeiculos">
+                                <h2>Maverick Híbrido</h2>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdownAll" id="dropdownCategoriaServicos" >
+                <button class="botoesHeader">Suporte & Serviços</button>
+                <div class="dropdownSuporteServicos">
+                    <div id="dropdownBotoesSuporteServicos">
+                        <button class="botoesSuporteServicos">Assistência 24hs</button>
+                        <button class="botoesSuporteServicos">Tabela Fipe</button>
+                        <button class="botoesSuporteServicos">Relatar um Problema / FeedBack</button>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+        
+        <div id="divLogo">
+            <img src="imgs/inicial/ford.svg" id="fordLogo">
+        </div>
+        
+
+        <nav id="navLogin">
+            <div class="dropdownAll" id="dropdownLogin">
+                
+                <button class="botoesHeader" id="botaoLogin"><i class="fa-regular fa-circle-user fa-xl"></i></button>
+                <h3 id="usuarioLogado"></h3>
+                <div class="dropdownLoginAll">
+                    <div id="dropdownBotoesLogin">
+                        <a href="login/login.html"><button class="botoesLogin">Log-in</button></a>
+                        <a href="cadastro/pagina_login.html"><button class="botoesLogin">Cadastrar-se</button></a>
+                    </div>
+                </div>
+            </div>
+           
+        </nav>
+
+    </div>
+</header>
+<body>
+    <div id="divPrincipal">
+        <div id="divSlider">
+            <button class="botoesSlider" id="botaoAnterior"><</button>
+            <img src="" id="imgSlider" alt="">
+            <button class="botoesSlider" id="botaoProximo">></button>
+        </div>
+
+        <div id="nomeCategorias">
+            <h1>Categorias:</h1>
+            <h3>Ache o tipo de veículo certo para as suas necessidades.</h3>
+        </div>
+
+        <div id="divCategorias">   
+            <nav id="navCategorias">
+                <button class="botoesCategorias">SUV's & Carros</button>
+                <button class="botoesCategorias">Picapes & Vans</button>
+                <button class="botoesCategorias">Elétricos & Híbridos</button>
+                <button class="botoesCategorias">Performance</button>
+                <button class="botoesCategorias">Comercial</button>
+            </nav>
+
+            <div id="divImgCategoria">
+                <img src="" id="imgCategoria" alt="">
+            </div>
+
+            
+        </div>
+        
+        <div id="divServicos">
+            <img src="imgs/inicial/imagemServico.jpg" alt="">
+            <div id="nomeServicos">
+                <h1>Serviços:</h1>
+                <h3>Não deixe seu Ford na mão, dê o melhor à ele.</h3>
+            </div>
+            <div id="divCategoriasServicos">
+                <div id="divAssistencia">
+                    <img src="imgs/inicial/assistencia.webp" alt="">
+                    <h1>Assistência 24hs</h1>
+                    <h3>Proporcionamos uma assistência de excêlencia ao(s) seu(s) veiculo(s) Ford.</h3>
+                    <button class="botoesServicos">Saiba Mais ></button>
+                </div>
+                <div id="divFipe">
+                    <img src="imgs/inicial/fipe.webp" alt="">
+                    <h1>Tabela Fipe</h1>
+                    <h3>Saiba melhor na hora de escolher o seu Ford no Precinho.</h3>
+                    <button class="botoesServicos">Saiba Mais ></button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="chatSuporte">
+        <div id="mensagemContainer"></div>
+
+        <div id="loginContainer">
+            <button id="botaoIngressar">Ingressar no Chat</button>
+        </div>
+
+        <div id="envioContainer">
+            <input type="text" placeholder="Digite Aqui..." id="mensagemInput">
+            <button id="botaoEnviar" type="submit">Enviar</button>
+        </div>
+           
+    </div>
+
+    <div id="divChat">
+            <div id="botaoChat">
+                <img src="imgs/inicial/chat.svg" alt="" id="chatImg">
+            </div>
+    </div>
+    
+</body>
+<footer>
+    <div id="divFooter">
+
+        <div id="divLogoFooter">
+            <object data="imgs/inicial/ford.svg" id="fordLogoFooter"></object>
+        </div>
+        
+        <nav id="navRedesSociais">
+            <h2>Siga a Ford</h2>
+            <a href="https://x.com/ford"><i id="redesSociais" class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/user/ford"><i id="redesSociais" class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/ford"><i id="redesSociais" class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ford/"><i id="redesSociais" class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@ford"><i id="redesSociais" class="fa-brands fa-tiktok"></i></a>
+        </nav>
+
+    </div>
+</footer>
+</html>

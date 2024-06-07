@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford - Tabela FIPE</title>
+    <link rel="stylesheet" href="fipe.css">
+    <script src="fipe.js" defer></script>
+</head>
+<header>
+    <div id="divHeader">
+        <div id="divLogo">
+            <img src="../imgs/inicial/ford.svg" alt="" id="logo">
+        </div>
+        
+    </div>
+</header>
+<body>
+    <div id="divTotal">
+            <div id="divRetornar">
+                <h3 id="botaoVoltar">Voltar ao Inicio</h3>
+            </div>
+        <div id="divCentral">
+
+            <div id="divConteudo">
+                <h1>Selecione um tipo de veículo:</h1>
+                <div id="divCentralBotoes">
+                    <button class="botoesOpcoes" onclick="tabelaFipe(this)" value="carros">
+                        <img src="../imgs/tabelaFipe/carro.png" class="imgOpcoes">
+                        <h1>CARROS</h1></button>
+                    <button class="botoesOpcoes" onclick="tabelaFipeCaminhoes(this)" value="caminhoes"><img src="../imgs/tabelaFipe/caminhao.png" class="imgOpcoes">
+                        <h1>CAMINHÕES</h1></button>
+                </div>
+
+            </div>
+
+            <div id="divConteudoCarros">
+                
+                <button class="divCadaVeiculo" value="EcoSport">
+                    <img src="../imgs/tabelaFipe/veiculosFord/ecosport.webp" alt="" class="imgVeiculos">
+                    <h3>Ecosport</h3>
+                </button>
+
+                <button class="divCadaVeiculo" value="Escort">
+                    <img src="../imgs/tabelaFipe/veiculosFord/escortFord.jpg" alt="" class="imgVeiculos">
+                    <h3>Escort</h3>
+                </button>
+
+                <button class="divCadaVeiculo" value="Focus">
+                    <img src="../imgs/tabelaFipe/veiculosFord/fordFocus.webp" alt="" class="imgVeiculos">
+                    <h3>Focus</h3>
+                </button>
+                
+                <button class="divCadaVeiculo" value="Ranger">
+                    <img src="../imgs/tabelaFipe/veiculosFord/fordRanger.jpg" alt="" class="imgVeiculos">
+                    <h3>Ranger</h3>
+                </button>
+            </div>
+
+                <div id="divConteudoCaminhoes">
+                    <button class="divCadaVeiculo" value="CARGO">
+                        <img src="../imgs/tabelaFipe/veiculosFord/fordCargo.jpg" alt="" class="imgVeiculos">
+                        <h3>CARGO</h3>
+                    </button>
+                    <button class="divCadaVeiculo" value="F-MAXX">
+                        <img src="../imgs/tabelaFipe/veiculosFord/fordFmaxx.jpg" alt="" class="imgVeiculos">
+                        <h3>F-MAXX</h3>
+                    </button>
+                    <button class="divCadaVeiculo" value="F-350">
+                        <img src="../imgs/tabelaFipe/veiculosFord/fordF350.avif" alt=""  class="imgVeiculos">
+                        <h3>F350</h3>
+                    </button>
+                    <button class="divCadaVeiculo" value="F-4000">
+                        <img src="../imgs/tabelaFipe/veiculosFord/fordF4000.jpg" alt="" class="imgVeiculos">
+                        <h3>F-4000</h3>
+                    </button>
+                </div>
+            </div>
+    </div>
+
+    <span id="fecharModal">X</span>
+    <div id="modal">
+        
+        <div id="modalConteudo">
+
+        </div>
+    </div>
+    
+    <div id="modalAnos">
+        <div id="modalAnosConteudo">
+
+        </div>
+    </div>
+
+
+
+</body>
+<footer>
+
+</footer>
+</html>

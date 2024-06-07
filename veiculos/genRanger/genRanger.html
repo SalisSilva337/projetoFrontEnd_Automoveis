@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Geração Ranger</title>
+    <link rel="stylesheet" href="../cssHeader/body.css">
+    <link rel="stylesheet" href="../cssHeader/header.css">
+    <script src="genRanger.js" defer></script>
+    <script src="https://kit.fontawesome.com/995dcfb715.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <div id="divHeader">
+        <nav id="navHeader">
+
+            <div class="dropdownAll" id="dropdownCategoriaVeiculos">
+                <button class="botoesHeader">Veículos</button>
+                <div class="dropdownVeiculos">
+                    <div id="dropdownBotoes">
+                        <button class="botoesVeiculos">SUV's</button>
+                        <button class="botoesVeiculos">Picapes</button>
+                        <button class="botoesVeiculos">Elétricos</button>
+                        <button class="botoesVeiculos">Performance</button>
+                        <button class="botoesVeiculos">Comercial</button>
+                        
+                    </div>
+                    <div id="divVeiculos" >
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/showroom/fbr-showroom-ranger-p703-v2.png.dam.full.high.png/1691681133806.png" alt="" class="imgVeiculos">
+                                <h2>Nova Geração Ranger</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/ranger-raptor/showroom/fbr-showroom-ranger-raptor.jpg.dam.full.high.jpg/1700832163575.jpg" alt="" class="imgVeiculos">
+                                <h2>Ranger Raptor</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/maverick/models/fx4/fbr-showroom-maverick.jpg.dam.full.high.jpg/1712867686782.jpg" alt="" class="imgVeiculos">
+                                <h2>Maverick</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/maverick/models/hybrid/fbr-showroom-maverick%20hibrida.jpg.dam.full.high.jpg/1712867691940.jpg" alt="" class="imgVeiculos">
+                                <h2>Maverick Híbrido</h2>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdownAll" id="dropdownCategoriaServicos" >
+                <button class="botoesHeader">Suporte & Serviços</button>
+                <div class="dropdownSuporteServicos">
+                    <div id="dropdownBotoesSuporteServicos">
+                        <button class="botoesSuporteServicos">Assistência 24hs</button>
+                        <button class="botoesSuporteServicos">Tabela Fipe</button>
+                        <button class="botoesSuporteServicos">Relatar um Problema / FeedBack</button>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+        
+        <div id="divLogo">
+            <img src="../../imgs/inicial/ford.svg" id="fordLogo">
+        </div>
+        
+
+        <nav id="navLogin">
+            <div class="dropdownAll" id="dropdownLogin">
+                
+                <button class="botoesHeader" id="botaoLogin"><i class="fa-regular fa-circle-user fa-xl"></i></button>
+                <h3 id="usuarioLogado"></h3>
+                <div class="dropdownLoginAll">
+                    <div id="dropdownBotoesLogin">
+                        <a href="login/login.html"><button class="botoesLogin">Log-in</button></a>
+                        <a href="cadastro/pagina_login.html"><button class="botoesLogin">Cadastrar-se</button></a>
+                    </div>
+                </div>
+            </div>
+           
+        </nav>
+
+    </div>
+</header>
+<body>
+    <div id="divSlider">
+        <img src="https://www.autoo.com.br/fotos/2022/12/1280_960/ford1_07122022_72713_1280_960.jpg" alt="" id="imgSlider">
+        <div id="divLocalizarConcessionaria">
+            <i class="fa-solid fa-location-dot fa-xl" id="localizar"></i>
+        </div>
+        <div id="divBotoesSlider">
+            <button class="botoesSlider"><</button>
+            <h2 id="posicaoImg">1/5</h2>
+            <button class="botoesSlider">></button>
+        </div>
+        <div id="infoSlider">
+            <h1>Nova Geração Ranger</h1>
+            <h2>R$234.990</h2>
+        </div>
+    </div>
+
+    <h1 id="principaisCaracteristicas">PRINCIPAIS CARACTERÍSTICAS</h1>
+
+    <div id="infoVeiculo">
+        
+        <div class="infos">
+            <section class="secoesInfo">
+                <h1>Conectividade:</h1>
+                <h3><li>Painel Full Digital de 12,4"</li></h3>
+                <h3><li>Sync 4 de 12"</li></h3>
+            </section>
+        </div>
+        <div class="linha"></div>
+        <div class="infos">
+            <section class="secoesInfo">
+                <h1>Performance:</h1>
+                <h3><li>Motor 3.0L V6 de 250cv com 600Nm</li></h3>
+                <h3><li>Transmissão AT de 10 velocidades</li></h3>
+            </section>
+        </div>
+        <div class="linha"></div>
+        <div class="infos">
+            <section class="secoesInfo">
+                <h1>Segurança:</h1>
+                <h3><li>Assistente Autônomo de Frenagem</li></h3>
+                <h3><li>Alerta de trafego cruzado</li></h3>
+            </section>
+        </div>
+    </div>
+    <div id="veiculoCores">
+        <div id="cabecalhoCores">
+            <h1 id="textoCores">Cores</h1>
+            <h3 id="disponibilidadeCor">Disponível em</h3>
+            <h2 id="nomeCor">Branco Artico</h2>
+        </div>
+
+        <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/branco-artico/fbr-nova-ranger-limited-colorizer-branco-artico.jpg.dam.full.high.jpg/1687393695829.jpg" id="imgCorVeiculo">
+
+        <div id="coresDisponiveis">
+            <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/branco-artico/btn-branco-artico.png.dam.full.high.png/1687393695793.png" alt="">
+            <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/vermelho-bari/btn-vermelho-bari.jpg.dam.full.high.jpg/1687393699743.jpg" alt="">
+            <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/laranja-jalapao/btn-laranja-jalapao.png.dam.full.high.png/1687393703767.png" alt="">
+            <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/cinza-moscou/btn-cinza-moscou.png.dam.full.high.png/1687393707722.png" alt="">
+        </div>
+    </div>
+    <div>
+        <h1>MAIS DETALHES:</h1>
+    </div>
+    <div id="detalhesVeiculos">
+        <div class="cadaDetalhe">
+            <img src="https://www.ford.com.br/content/ford/br/pt_br/nova-ranger-content/2024/media-carousels/overview-cards-test-ab/jcr:content/par/mediacarouselitem/image.imgs.full.high.jpg/1694704274482.jpg" alt="">
+            <h1>DESIGN</h1>
+            <h3>A Nova Geração Ford Ranger apresenta visual externo e interno totalmente novos, materializando o DNA Raça Forte.</h3>
+        </div>
+
+        <div class="cadaDetalhe">
+            <img src="https://www.ford.com.br/content/ford/br/pt_br/nova-ranger-content/2024/media-carousels/overview-cards-test-ab/jcr:content/par/mediacarouselitem_1528869907/image.imgs.full.high.jpg/1694704540467.jpg" alt="">
+            <h1>PERFORMANCE</h1>
+            <h3>A Nova Geração Ford Ranger apresenta visual externo e interno totalmente novos, materializando o DNA Raça Forte.</h3>
+        </div>
+
+        <div class="cadaDetalhe">
+            <img src="https://www.ford.com.br/content/ford/br/pt_br/nova-ranger-content/2024/media-carousels/overview-cards-test-ab/jcr:content/par/mediacarouselitem_601442681/image.imgs.full.high.jpg/1694704605653.jpg" alt="">
+            <h1>CONECTIVIDADE</h1>
+            <h3>A Nova Geração Ford Ranger apresenta visual externo e interno totalmente novos, materializando o DNA Raça Forte.</h3>
+        </div>
+
+        <div class="cadaDetalhe">
+            <img src="https://www.ford.com.br/content/ford/br/pt_br/nova-ranger-content/2024/media-carousels/overview-cards-test-ab/jcr:content/par/mediacarouselitem_274109040/image.imgs.full.high.jpg/1694704627321.jpg" alt="">
+            <h1>SEGURANÇA</h1>
+            <h3>A Nova Geração Ford Ranger apresenta visual externo e interno totalmente novos, materializando o DNA Raça Forte.</h3>
+        </div>
+    </div>
+</body>
+<footer>
+
+</footer>
+</html>
