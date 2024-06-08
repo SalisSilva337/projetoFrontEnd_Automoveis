@@ -1,0 +1,21 @@
+#divFooter{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 120vh;
+    padding: 50px;
+}
+
+#navRedesSociais{
+    display: flex;
+    gap: 20px;
+}
+
+a{
+    font-size: 30px;
+}
+
+#redesSociais{
+   color:rgb(0, 20, 45); 
+}

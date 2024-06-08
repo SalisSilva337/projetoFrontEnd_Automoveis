@@ -292,3 +292,7 @@
 #divHeader:hover #fordLogo{
     filter: invert(11%) sepia(10%) saturate(5051%) hue-rotate(175deg) brightness(92%) contrast(108%);
 }
+
+.ativado{
+    display: flex;
+}
