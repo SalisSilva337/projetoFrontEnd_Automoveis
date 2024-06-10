@@ -8,6 +8,8 @@ const botoesCategorias = document.querySelectorAll(".botoesCategorias");
 const botaoFeedback = document.querySelector("#botaoFeedback");
 const modalFeedback = document.querySelector("#modalFeedback");
 const fecharModalFeedback = document.querySelector("#fecharModalFeedback");
+const botaoEnviarFeedback = document.querySelector("#botaoEnviarFeedback");
+const selectFeedback =  document.querySelector("#selectFeedback");
 
 const imgCategoria = document.querySelector("#imgCategoria");
 
@@ -73,7 +75,24 @@ botaoFeedback.addEventListener("click", () => {
 fecharModalFeedback.addEventListener("click", () => {
     modalFeedback.style.display = "none"
 })
- 
+
+botaoEnviarFeedback.addEventListener("click", () => {
+    modalAlerta.style.display = "flex"
+    botaoEnviarFeedback.disabled = true
+    setTimeout(() => {
+        modalAlerta.style.display = "none"
+        botaoEnviarFeedback.disabled = false
+    }, 2000);
+    
+})
+
+selectFeedback.addEventListener("change", () => {
+    botaoEnviarFeedback.disabled = false
+})
+
+
+
+
 let request_infoUsuario = JSON.parse(sessionStorage.usuarioSessionStorage)
 console.log(request_infoUsuario);
 usuarioLogado.textContent = request_infoUsuario.infoNome;

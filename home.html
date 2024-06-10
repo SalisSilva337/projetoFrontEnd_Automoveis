@@ -167,8 +167,8 @@
             <img src="imgs/inicial/ford.svg" alt="" id="fordLogoModal">
             <div id="feedbackContainer">
                 <h2>Deixe o seu FeedBack abaixo.</h2>
-                <select name="" id="">
-                    <option value="" hidden>Selecione uma opção...</option>
+                <select name="" id="selectFeedback">
+                    <option value="" hidden>Selecione uma opção*...</option>
                     <option value="">Problemas com alguma funcionalidade do site</option>
                     <option value="">Problemas com o Chat</option>
                     <option value="">Problemas com o Suporte</option>
@@ -176,11 +176,16 @@
                 </select>
                 <h2>Digite sua mensagem:</h2>
                 <textarea name="" id="" placeholder="Digite aqui..."></textarea>
-                <button id="botaoEnviarFeedback">Enviar</button>
+                <button id="botaoEnviarFeedback" disabled>Enviar</button>
             </div>
         </div>
     </div>
     
+    <div id="modalAlerta">
+        <h1>Feedback Enviado com Sucesso!</h1>
+    </div>
+
+
 </body>
 <footer>
     <div id="divFooter">
@@ -204,9 +209,7 @@
                 <button id="botaoFeedback">Relatar Um Problema/FeedBack</button>
             </div>
 
-            <div>
-                
-            </div>
+            
         </div>
        
     </div>
