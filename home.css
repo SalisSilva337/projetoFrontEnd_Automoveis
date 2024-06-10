@@ -567,3 +567,98 @@ a{
 .ativado{
     display: flex;
 }
+
+#redesFeedback{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#divFeedback button{
+    background-color: transparent;
+    border: 0px;
+    font-size: 20px;
+}
+
+#divFeedback button:hover{
+    text-decoration: underline;
+}
+
+#modalFeedback{
+    position: fixed;
+    display: none;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0,0.7);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+#modalConteudoFeedback{
+    width: 700px;
+    height: 800px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0,0.6);
+    background-color: #00142d;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#fecharModalFeedback{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    font-size: 50px;
+    background-color:#00142d;
+    width: 60px;
+    height: 60px;
+    border: 0px;
+    border-radius: 200px;
+    color: rgb(255, 255, 255);
+    box-shadow:  1px 1px 10px rgb(0, 0, 0,0.3);
+}
+
+#fordLogoModal{
+    height: 150px;
+    width: 700px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(345deg) brightness(103%) contrast(101%);
+}
+
+#feedbackContainer{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    gap: 60px;
+}
+
+#feedbackContainer select{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 1px white;
+}
+
+#feedbackContainer textarea{
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow:  10px 10px 1px white;
+    font-size: large;
+    text-transform: capitalize;
+}
+
+#botaoEnviarFeedback{
+    height: 50px;
+    width: 150px;
+    font-size: larger;
+    background-color: rgb(108, 70, 141);
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+}
