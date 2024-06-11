@@ -79,6 +79,7 @@ botoesHeader[1].addEventListener("click", function () {
     dropdownLoginAll.classList.toggle("ativado")
 });
 
+
 const divLocalizarConcessionaria = document.querySelector("#divLocalizarConcessionaria")
 const iframeMaps = document.querySelector(".iframeMaps")
 
@@ -88,6 +89,61 @@ divLocalizarConcessionaria.addEventListener("click", () => {
 })
 
 
+const botaoSuv = document.querySelector("#botaoSuv")
+const botaoPicapes = document.querySelector("#botaoPicapes")
+const botaoEletricos = document.querySelector("#botaoEletricos")
+const botaoPerformance = document.querySelector("#botaoPerformance")
+const botaoComercial = document.querySelector("#botaoComercial")
+
+const divSuv = document.querySelector("#divSuv")
+const divPicapes = document.querySelector("#divPicapes")
+const divEletricos = document.querySelector("#divEletricos")
+const divPerformance = document.querySelector("#divPerformance")
+const divComercial = document.querySelector("#divComercial")
+
+window.addEventListener("load", () => {
+    divSuv.style.display = "flex"
+})
+
+botaoSuv.addEventListener("click", () => {
+    divSuv.style.display = "flex"
+    divPicapes.style.display = "none"
+    divEletricos.style.display = "none"
+    divPerformance.style.display = "none"
+    divComercial.style.display = "none"
+})
+
+botaoPicapes.addEventListener("click", () => {
+    divSuv.style.display = "none"
+    divPicapes.style.display = "flex"
+    divEletricos.style.display = "none"
+    divPerformance.style.display = "none"
+    divComercial.style.display = "none"
+})
+
+botaoEletricos.addEventListener("click", () => {
+    divSuv.style.display = "none"
+    divPicapes.style.display = "none"
+    divEletricos.style.display = "flex"
+    divPerformance.style.display = "none"
+    divComercial.style.display = "none"
+})
+
+botaoPerformance.addEventListener("click", () => {
+    divSuv.style.display = "none"
+    divPicapes.style.display = "none"
+    divEletricos.style.display = "none"
+    divPerformance.style.display = "flex"
+    divComercial.style.display = "none"
+})
+
+botaoComercial.addEventListener("click", () => {
+    divSuv.style.display = "none"
+    divPicapes.style.display = "none"
+    divEletricos.style.display = "none"
+    divPerformance.style.display = "none"
+    divComercial.style.display = "flex"
+})
 
 
 // let listaImgPrincipal = ["imgs/novaGen.jpg","../imgs/inicial/principal/fordPicape.jpg","imgs/inicial/principal/fordNewMustang.jpg","imgs/inicial/principal/fordultima.avif"];

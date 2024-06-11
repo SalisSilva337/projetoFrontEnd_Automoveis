@@ -82,13 +82,19 @@ button:hover{
     color: rgb(148, 96, 193) ;
 }
 
-#divVeiculos{
+.divVeiculos{
+    display: none;
     width: 90vh;
     background-color: white;
-    display: flex;
     justify-content: left;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+.botoesVeiculos:focus{
+    border: 0px;
+    border-bottom: 3px solid rgb(148, 96, 193);
+    color: rgb(148, 96, 193) ;
 }
 
 .divCadaItem{
