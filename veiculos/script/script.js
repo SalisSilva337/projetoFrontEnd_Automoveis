@@ -79,24 +79,35 @@ botoesHeader[1].addEventListener("click", function () {
     dropdownLoginAll.classList.toggle("ativado")
 });
 
-
-let listaImgPrincipal = ["imgs/novaGen.jpg","imgs/inicial/principal/fordPicape.jpg","imgs/inicial/principal/fordNewMustang.jpg","imgs/inicial/principal/fordultima.avif"];
-
-const imgSlider = document.querySelector("#imgSlider");
-const botaoProximo = document.querySelector("#botaoProximo");
-const botaoAnterior = document.querySelector("#botaoAnterior");
-const botoesCategorias = document.querySelectorAll(".botoesCategorias");
-const imgCategoria = document.querySelector("#imgCategoria");
+const divLocalizarConcessionaria = document.querySelector("#divLocalizarConcessionaria")
+const iframeMaps = document.querySelector(".iframeMaps")
 
 
-let contadorImgPrincipal = 0;
-imgSlider.src = listaImgPrincipal[0]
-imgCategoria.src = "imgs/inicial/categorias/mustang.jpg";
+divLocalizarConcessionaria.addEventListener("click", () => {
+    iframeMaps.classList.toggle("ativado")
+})
 
-botaoProximo.addEventListener("click", function () {
-    if (contadorImgPrincipal < listaImgPrincipal.length - 1) {
-        contadorImgPrincipal++
-        imgSlider.src = listaImgPrincipal[contadorImgPrincipal];
-    }
+
+
+
+// let listaImgPrincipal = ["imgs/novaGen.jpg","../imgs/inicial/principal/fordPicape.jpg","imgs/inicial/principal/fordNewMustang.jpg","imgs/inicial/principal/fordultima.avif"];
+
+// const imgSlider = document.querySelector("#imgSlider");
+// const botaoProximo = document.querySelector("#botaoProximo");
+// const botaoAnterior = document.querySelector("#botaoAnterior");
+// const botoesCategorias = document.querySelectorAll(".botoesCategorias");
+// const imgCategoria = document.querySelector("#imgCategoria");
+
+
+// let contadorImgPrincipal = 0;
+// imgSlider.src = listaImgPrincipal[0]
+// // imgCategoria.src = "imgs/inicial/categorias/mustang.jpg";
+
+// botaoProximo.addEventListener("click", function () {
+//     if (contadorImgPrincipal < listaImgPrincipal.length - 1) {
+//         contadorImgPrincipal++
+//         imgSlider.src = listaImgPrincipal[contadorImgPrincipal];
+//     }
     
-});
+// });
+

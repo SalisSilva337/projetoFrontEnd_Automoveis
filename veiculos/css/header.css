@@ -141,7 +141,7 @@
     color: rgb(148, 96, 193) ;
 }
 
-#divVeiculos{
+.divVeiculos{
     width: 90vh;
     background-color: white;
     display: flex;
