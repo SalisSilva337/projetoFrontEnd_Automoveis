@@ -146,24 +146,37 @@ botaoComercial.addEventListener("click", () => {
 })
 
 
-// let listaImgPrincipal = ["imgs/novaGen.jpg","../imgs/inicial/principal/fordPicape.jpg","imgs/inicial/principal/fordNewMustang.jpg","imgs/inicial/principal/fordultima.avif"];
+let listaImgPrincipal = ["imgs/novaGen.jpg","imgs/frente.webp","imgs/tras.jpg","imgs/lateral.jpg","imgs/interior.jpg"];
 
-// const imgSlider = document.querySelector("#imgSlider");
-// const botaoProximo = document.querySelector("#botaoProximo");
-// const botaoAnterior = document.querySelector("#botaoAnterior");
-// const botoesCategorias = document.querySelectorAll(".botoesCategorias");
-// const imgCategoria = document.querySelector("#imgCategoria");
+const imgSlider = document.querySelector("#imgSlider");
+const botaoProximo = document.querySelector("#botaoProximo");
+const botaoAnterior = document.querySelector("#botaoAnterior");
+const botoesCategorias = document.querySelectorAll(".botoesCategorias");
+const imgCategoria = document.querySelector("#imgCategoria");
+const posicaoImg = document.querySelector("#posicaoImg")
+
+let contadorImgPrincipal = 0;
+let contarImg = 1;
+imgSlider.src = listaImgPrincipal[0]
 
 
-// let contadorImgPrincipal = 0;
-// imgSlider.src = listaImgPrincipal[0]
-// // imgCategoria.src = "imgs/inicial/categorias/mustang.jpg";
-
-// botaoProximo.addEventListener("click", function () {
-//     if (contadorImgPrincipal < listaImgPrincipal.length - 1) {
-//         contadorImgPrincipal++
-//         imgSlider.src = listaImgPrincipal[contadorImgPrincipal];
-//     }
+botaoProximo.addEventListener("click", function () {
+    if (contadorImgPrincipal < listaImgPrincipal.length - 1) {
+        contadorImgPrincipal++
+        contarImg++
+        imgSlider.src = listaImgPrincipal[contadorImgPrincipal];
+        posicaoImg.textContent = contarImg + "/5"
+        
+    }
     
-// });
+});
 
+botaoAnterior.addEventListener("click", function () {
+    if (contadorImgPrincipal > 0) {
+        contadorImgPrincipal--
+        contarImg--
+        imgSlider.src = listaImgPrincipal[contadorImgPrincipal];
+        posicaoImg.textContent = contarImg + "/5"
+    }
+    
+});
