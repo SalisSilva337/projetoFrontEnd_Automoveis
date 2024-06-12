@@ -32,7 +32,7 @@ repetir_senha.addEventListener("input", (event)=>{
 
 botaoRegistrar.addEventListener("click", (event) => {
 
-    form.innerHTML="";
+    
 
     if (validar_campo()) {
         let infoUsuario = {

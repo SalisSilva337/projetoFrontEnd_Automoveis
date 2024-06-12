@@ -4,8 +4,8 @@ const imgSlider = document.querySelector("#imgSlider");
 const botaoProximo = document.querySelector("#botaoProximo");
 const botaoAnterior = document.querySelector("#botaoAnterior");
 const botoesCategorias = document.querySelectorAll(".botoesCategorias");
-
-
+const dropdownBotoesLogin = document.querySelector("#dropdownBotoesLogin");
+const usuarioLogado = document.querySelector("#usuarioLogado")
 const imgCategoria = document.querySelector("#imgCategoria");
 
 const chatSuporte = document.querySelector(".chatSuporte");
@@ -64,5 +64,17 @@ botaoChat.addEventListener("click", () => {
 let request_infoUsuario = JSON.parse(sessionStorage.usuarioSessionStorage)
 console.log(request_infoUsuario);
 usuarioLogado.textContent = request_infoUsuario.infoNome;
+
+if(usuarioLogado){
+    let botaoSair=document.createElement("button");
+    botaoSair.textContent="Sair"
+    dropdownBotoesLogin.appendChild(botaoSair);
+
+    botaoSair.addEventListener("click", (event)=>{
+        usuarioLogado.textContent=""
+
+    })
+
+}
 
 
