@@ -180,3 +180,32 @@ botaoAnterior.addEventListener("click", function () {
     }
     
 });
+
+const imgCorVeiculo = document.querySelector("#imgCorVeiculo")
+const nomeCor = document.querySelector("#nomeCor")
+const branco = document.querySelector("#branco")
+const vermelho = document.querySelector("#vermelho")
+const laranja = document.querySelector("#laranja")
+const cinza = document.querySelector("#cinza")
+
+
+branco.addEventListener("click", () => {
+    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/branco-artico/fbr-nova-ranger-limited-colorizer-branco-artico.jpg.dam.full.high.jpg/1687393695829.jpg"
+    nomeCor.textContent = "Branco Artico"
+})
+
+laranja.addEventListener("click", () => {
+    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/laranja-jalapao/fbr-nova-ranger-limited-colorizer-laranja-jalapao.jpg.dam.full.high.jpg/1687393703728.jpg"
+    nomeCor.textContent = "Laranja Jalapão"
+})
+
+vermelho.addEventListener("click", () => {
+    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/vermelho-bari/fbr-nova-ranger-limited-colorizer-vermelho-bari.jpg.dam.full.high.jpg/1687393699788.jpg"
+    nomeCor.textContent = "Vermelho Bari"
+})
+
+cinza.addEventListener("click", () => {
+    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/cinza-moscou/fbr-nova-ranger-limited-colorizer-cinza-moscou.jpg.dam.full.high.jpg/1687393707668.jpg"
+    nomeCor.textContent = "Cinza Moscou"
+})
+
