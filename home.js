@@ -1,4 +1,4 @@
-let listaImgPrincipal = ["imgs/inicial/principal/fordBronco.jpg","imgs/inicial/principal/fordPicape.jpg","imgs/inicial/principal/fordNewMustang.jpg","imgs/inicial/principal/fordultima.avif"];
+let listaImgPrincipal = ["imgs/inicial/principal/fordBronco.jpg", "imgs/inicial/principal/fordPicape.jpg", "imgs/inicial/principal/fordNewMustang.jpg", "imgs/inicial/principal/fordultima.avif"];
 
 const imgSlider = document.querySelector("#imgSlider");
 const botaoProximo = document.querySelector("#botaoProximo");
@@ -7,10 +7,11 @@ const botoesCategorias = document.querySelectorAll(".botoesCategorias");
 const dropdownBotoesLogin = document.querySelector("#dropdownBotoesLogin");
 const usuarioLogado = document.querySelector("#usuarioLogado")
 const imgCategoria = document.querySelector("#imgCategoria");
-
+const botaoCadastro = document.querySelector("#botaoCadastro");
 const chatSuporte = document.querySelector(".chatSuporte");
 const botaoChat = document.querySelector("#botaoChat");
-
+const id_dropdownLoginAll = document.querySelector("#id_dropdownLoginAll");
+const buttonLogin = document.querySelector("#buttonLogin");
 
 
 let contadorImgPrincipal = 0;
@@ -22,7 +23,7 @@ botaoProximo.addEventListener("click", function () {
         contadorImgPrincipal++
         imgSlider.src = listaImgPrincipal[contadorImgPrincipal];
     }
-    
+
 });
 
 botaoAnterior.addEventListener("click", function () {
@@ -30,7 +31,7 @@ botaoAnterior.addEventListener("click", function () {
         contadorImgPrincipal--
         imgSlider.src = listaImgPrincipal[contadorImgPrincipal];
     }
-       
+
 });
 
 for (let index = 0; index < botoesCategorias.length; index++) {
@@ -51,8 +52,8 @@ for (let index = 0; index < botoesCategorias.length; index++) {
             imgCategoria.src = "imgs/inicial/categorias/comercial.avif"
         }
     })
-  
-    
+
+
 }
 
 
@@ -60,21 +61,46 @@ botaoChat.addEventListener("click", () => {
     chatSuporte.classList.toggle("ativado")
 })
 
- 
+
 let request_infoUsuario = JSON.parse(sessionStorage.usuarioSessionStorage)
 console.log(request_infoUsuario);
 usuarioLogado.textContent = request_infoUsuario.infoNome;
 
-if(usuarioLogado){
-    let botaoSair=document.createElement("button");
-    botaoSair.textContent="Sair"
+if (usuarioLogado) {
+    var botaoSair = document.createElement("button");
+    let botaoMinhaConta = document.createElement("button");
+
+    botaoMinhaConta.textContent = "Minha Conta";
+    botaoSair.textContent = "Sair"
+
+    botaoMinhaConta.classList.toggle("botoesLogin");
+    botaoSair.classList.toggle("botoesLogin");
+
+    dropdownBotoesLogin.appendChild(botaoMinhaConta);
     dropdownBotoesLogin.appendChild(botaoSair);
 
-    botaoSair.addEventListener("click", (event)=>{
-        usuarioLogado.textContent=""
+    buttonLogin.style.display = "none";
+    botaoCadastro.style.display = "none";
+
+    botaoSair.addEventListener("click", (event) => {
+
+        remover_itens(buttonLogin, botaoCadastro, botaoMinhaConta, usuarioLogado)
+        // buttonLogin.style.display = "flex";
+        // botaoCadastro.style.display = "flex";
+        // botaoMinhaConta.style.display = "none";
+        // usuarioLogado.textContent = ""
+        // sessionStorage.clear()
 
     })
 
+}
+
+function remover_itens(w, x, y, z) {
+    w.style.display = "flex";
+    x.style.display = "flex";
+    y.style.display = "none";
+    z.textContent = "";
+    sessionStorage.clear();
 }
 
 
