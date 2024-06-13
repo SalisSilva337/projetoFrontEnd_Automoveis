@@ -146,7 +146,7 @@ botaoComercial.addEventListener("click", () => {
 })
 
 
-let listaImgPrincipal = ["imgs/novaGen.jpg","imgs/frente.webp","imgs/tras.jpg","imgs/lateral.jpg","imgs/interior.jpg"];
+let listaImgPrincipal = ["imgs/territory.jpg","imgs/frente.jpeg","imgs/tras.webp","imgs/lateral.jpg","imgs/interior.jpg"];
 
 const imgSlider = document.querySelector("#imgSlider");
 const botaoProximo = document.querySelector("#botaoProximo");
@@ -185,27 +185,27 @@ const imgCorVeiculo = document.querySelector("#imgCorVeiculo")
 const nomeCor = document.querySelector("#nomeCor")
 const branco = document.querySelector("#branco")
 const vermelho = document.querySelector("#vermelho")
-const laranja = document.querySelector("#laranja")
+const azul = document.querySelector("#azul")
 const cinza = document.querySelector("#cinza")
 
 
 branco.addEventListener("click", () => {
-    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/branco-artico/fbr-nova-ranger-limited-colorizer-branco-artico.jpg.dam.full.high.jpg/1687393695829.jpg"
-    nomeCor.textContent = "Branco Artico"
+    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-territory/overview/v2/colorizer/branco-bariloche/fbr-territory-my24-color-03-branco-bariloche.jpg.dam.full.high.jpg/1711983684630.jpg"
+    nomeCor.textContent = "Branco Bariloche"
 })
 
-laranja.addEventListener("click", () => {
-    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/laranja-jalapao/fbr-nova-ranger-limited-colorizer-laranja-jalapao.jpg.dam.full.high.jpg/1687393703728.jpg"
-    nomeCor.textContent = "Laranja Jalapão"
+azul.addEventListener("click", () => {
+    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-territory/overview/v2/colorizer/azul-metalico/fbr-territory-my24-color-01-azul-metalico.jpg.dam.full.high.jpg/1711983675702.jpg"
+    nomeCor.textContent = "Azul Metálico"
 })
 
 vermelho.addEventListener("click", () => {
-    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/vermelho-bari/fbr-nova-ranger-limited-colorizer-vermelho-bari.jpg.dam.full.high.jpg/1687393699788.jpg"
-    nomeCor.textContent = "Vermelho Bari"
+    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-territory/overview/v2/colorizer/vermelho-vermont/fbr-territory-my24-color-04-vermelho-vermont.jpg.dam.full.high.jpg/1711983687873.jpg"
+    nomeCor.textContent = "Vermelho Vermont"
 })
 
 cinza.addEventListener("click", () => {
-    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/overview/colorizer/limited/colorizer/cinza-moscou/fbr-nova-ranger-limited-colorizer-cinza-moscou.jpg.dam.full.high.jpg/1687393707668.jpg"
-    nomeCor.textContent = "Cinza Moscou"
+    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-territory/overview/v2/colorizer/cinza-catar/fbr-territory-my24-color-02-ciza-catar.jpg.dam.full.high.jpg/1711983681235.jpg"
+    nomeCor.textContent = "Cinza Catar"
 })
 
