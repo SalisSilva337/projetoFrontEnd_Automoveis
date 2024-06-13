@@ -53,7 +53,6 @@ for (let index = 0; index < botoesCategorias.length; index++) {
         }
     })
 
-
 }
 
 
@@ -82,14 +81,13 @@ if (usuarioLogado) {
     buttonLogin.style.display = "none";
     botaoCadastro.style.display = "none";
 
+    botaoMinhaConta.addEventListener("click", (event)=>{
+        window.location.href="usuario_cadastrado/usuario_cadastrado.html"
+    })
+
     botaoSair.addEventListener("click", (event) => {
 
-        remover_itens(buttonLogin, botaoCadastro, botaoMinhaConta, usuarioLogado)
-        // buttonLogin.style.display = "flex";
-        // botaoCadastro.style.display = "flex";
-        // botaoMinhaConta.style.display = "none";
-        // usuarioLogado.textContent = ""
-        // sessionStorage.clear()
+        remover_itens(buttonLogin, botaoCadastro, botaoMinhaConta, usuarioLogado);
 
     })
 

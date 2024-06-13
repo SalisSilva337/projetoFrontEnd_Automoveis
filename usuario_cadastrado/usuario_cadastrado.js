@@ -8,16 +8,32 @@ const txtCEP = document.querySelector("#txtCEP");
 const txtUF = document.querySelector("#txtUF");
 const txtLocalidade = document.querySelector("#txtLocalidade");
 const txtRua = document.querySelector("#txtRua");
+const botaoEditar = document.querySelector("#botaoEditar");
+const botaoConfirmar = document.querySelector("#botaoConfirmar");
+const botaoPaginaInicial = document.querySelector("#botaoPaginaInicial");
 
+let request_infoUsuario = JSON.parse(sessionStorage.usuarioSessionStorage)
+console.log(request_infoUsuario);
+txtNome.value = request_infoUsuario.infoNome;
+txtEmail.value = request_infoUsuario.infoEmail;
+txtSenha.value = request_infoUsuario.infoSenha;
+txtCEP.value = request_infoUsuario.infoCEP;
+txtUF.value = request_infoUsuario.infoUF;
+txtLocalidade.value = request_infoUsuario.infoLocalidade;
 
-    let request_infoUsuario = JSON.parse(sessionStorage.usuarioSessionStorage)
-    console.log(request_infoUsuario);
-    txtNome.value = request_infoUsuario.infoNome;
-    txtSobrenome.value = request_infoUsuario.infoSobrenome;
-    txtTelefone.value = request_infoUsuario.infoTelefone;
-    txtEmail.value = request_infoUsuario.infoEmail;
-    txtSenha.value = request_infoUsuario.infoSenha;
-    txtCEP.value = request_infoUsuario.infoCEP;
-    txtUF.value = request_infoUsuario.infoUF;
-    txtLocalidade.value = request_infoUsuario.infoLocalidade;
-    txtRua.value = request_infoUsuario.infoRua;
+botaoEditar.addEventListener("click", (event) => {
+    txtNome.disabled = false;
+    txtEmail.disabled = false;
+    txtSenha.disabled = false;
+    txtCEP.disabled = false;
+});
+botaoConfirmar.addEventListener("click", (event) => {
+    txtNome.disabled = true;
+    txtEmail.disabled = true;
+    txtSenha.disabled = true;
+    txtCEP.disabled = true;
+});
+
+botaoPaginaInicial.addEventListener("click", (event)=>{
+    window.location.href="../home.html"
+})
