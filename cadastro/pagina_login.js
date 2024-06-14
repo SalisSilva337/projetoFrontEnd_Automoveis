@@ -7,6 +7,7 @@ const input_UF = document.querySelector("#input_UF");
 const email = document.querySelector("#email");
 const senha = document.querySelector("#senha");
 const repetir_senha = document.querySelector("#repetir_senha");
+const senhaInvalida = document.querySelector("#senhaInvalida");
 
 input_CEP.addEventListener("input", (event) => {
     buscar_CEP(buscar_CEP(input_CEP.value, input_Localidade, input_UF));
@@ -22,19 +23,17 @@ input_CEP.addEventListener("input", (event) => {
     };
 });
 
-email.addEventListener("input", (event)=>{
-    validar_email(email.value);
+email.addEventListener("input", (event) => {
+    validar_email(email.value)
 });
 
-repetir_senha.addEventListener("input", (event)=>{
-    validar_senha(repetir_senha.value);
+repetir_senha.addEventListener("input", (event) => {
+    validar_senha(repetir_senha.value)
 });
 
 botaoRegistrar.addEventListener("click", (event) => {
 
-    
-
-    if (validar_campo()) {
+    if (validar_campo() && validar_email(email.value) && validar_senha(repetir_senha.value)) {
         let infoUsuario = {
             "infoNome": nome.value,
             "infoEmail": email.value,
@@ -79,7 +78,7 @@ function validar_campo() {
         return false;
 
     } else if (input_CEP.value === "") {
-        email.style.borderColor = "red";
+        input_CEP.style.borderColor = "red";
         document.getElementById("input_CEP").placeholder = "Campo obrigatório*"
         return false;
 
@@ -93,10 +92,10 @@ function validar_campo() {
         document.getElementById("senha").placeholder = "Campo obrigatório*"
         return false;
 
-    } else if(senha.value.length<4){
+    } else if (senha.value.length < 4) {
 
         let avisoInfo = document.querySelector(".avisoInfo");
-        avisoInfo.style.color="red";
+        avisoInfo.style.color = "red";
         return false
 
     } else if (repetir_senha.value === "") {
@@ -126,12 +125,11 @@ function validar_email(emailValue) {
 function validar_senha(repetirSenha) {
 
     if (repetirSenha === senha.value) {
-        senhaInvalida.style.display = "none"
+        senhaInvalida.style.display="none"
         return true;
     } else {
-        senhaInvalida.style.display = "flex";
+        senhaInvalida.style.display="flex"
         return false;
     }
-
 };
 

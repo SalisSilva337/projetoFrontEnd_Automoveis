@@ -98,7 +98,7 @@ function remover_itens(w, x, y, z) {
     x.style.display = "flex";
     y.style.display = "none";
     z.textContent = "";
-    sessionStorage.clear();
+    
 }
 
 
