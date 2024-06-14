@@ -5,6 +5,10 @@ const botaoProximo = document.querySelector("#botaoProximo");
 const botaoAnterior = document.querySelector("#botaoAnterior");
 const botoesCategorias = document.querySelectorAll(".botoesCategorias");
 
+const botaoLogin = document.querySelector("#botaoLogin");
+const botaoCadastro = document.querySelector("#botaoCadastro");
+const usuarioLogado = document.querySelector("#usuarioLogado");
+
 const botaoFeedback = document.querySelector("#botaoFeedback");
 const modalFeedback = document.querySelector("#modalFeedback");
 const fecharModalFeedback = document.querySelector("#fecharModalFeedback");
@@ -103,9 +107,9 @@ const divEletricos = document.querySelector("#divEletricos")
 const divPerformance = document.querySelector("#divPerformance")
 const divComercial = document.querySelector("#divComercial")
 
-window.addEventListener("load", () => {
-    divSuv.style.display = "flex"
-})
+// window.addEventListener("load", () => {
+//     divSuv.style.display = "flex"
+// })
 
 botaoSuv.addEventListener("click", () => {
     divSuv.style.display = "flex"
@@ -153,6 +157,41 @@ let request_infoUsuario = JSON.parse(sessionStorage.usuarioSessionStorage)
 console.log(request_infoUsuario);
 usuarioLogado.textContent = request_infoUsuario.infoNome;
 
+if (usuarioLogado) {
+    var botaoSair = document.createElement("button");
+    let botaoMinhaConta = document.createElement("button");
+
+    botaoMinhaConta.textContent = "Minha Conta";
+    botaoSair.textContent = "Sair"
+
+    botaoMinhaConta.classList.toggle("botoesLogin");
+    botaoSair.classList.toggle("botoesLogin");
+
+    dropdownBotoesLogin.appendChild(botaoMinhaConta);
+    dropdownBotoesLogin.appendChild(botaoSair);
+
+    botaoLogin.style.display = "none";
+    botaoCadastro.style.display = "none";
+
+    botaoMinhaConta.addEventListener("click", (event)=>{
+        window.location.href="usuario_cadastrado/usuario_cadastrado.html"
+    })
+
+    botaoSair.addEventListener("click", (event) => {
+
+        remover_itens(botaoLogin, botaoCadastro, botaoMinhaConta, usuarioLogado);
+
+    })
+
+}
+
+function remover_itens(w, x, y, z) {
+    w.style.display = "flex";
+    x.style.display = "flex";
+    y.style.display = "none";
+    z.textContent = "";
+    
+}
 
 
 

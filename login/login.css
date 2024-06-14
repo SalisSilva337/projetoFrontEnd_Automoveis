@@ -60,6 +60,22 @@ body{
    
 }
 
+#avisoLoginNome{
+    display: none;
+    color: rgb(208, 16, 16);
+    font-size: 12px;
+    position: relative;
+    right: 160px;
+}
+
+#avisoLoginSenha{
+    display: none;
+    color: rgb(208, 16, 16);
+    font-size: 12px;
+    position: relative;
+    right: 160px;
+}
+
 #linha{
     width: 300px;
     border: 1px solid rgb(128, 128, 128,0.3);

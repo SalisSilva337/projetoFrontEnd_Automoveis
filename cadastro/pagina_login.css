@@ -2,31 +2,35 @@ body {
     margin: 0;
     overflow: hidden;
 }
-.label_titulo{
-    display: flex;
-    position: relative;
-    top: 15px;
-    left: 11px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.input_login{
-    width: 300px;
-    height: 30px;
-    border: solid 1px;
-    border-radius: 1px;
-    border-color: rgb(108, 108, 108);
-    margin-left: 10px;
-    font-size: 17px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 .input_login::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
+.avisoInfo{
+    position: relative;
+    top: 2px;
+    left: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    position: relative;
+}
+.avisoErro{
+    display: none;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: rgb(186, 2, 2);
+    top: 2px;
+    left: 5px;
+}
+
 .button_login{
     display: flex;
+    position: relative;
+    top: 60px;
+    left: 298px;
     width: 100px;
-    height: 40px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -35,40 +39,70 @@ body {
     border: solid 1px;
     background-color: rgb(0, 20, 45);
     border-radius: 5px;
-    position: relative;
-    top: 20px;
-    left: 215px;
     transition: all 80ms ease-in-out;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 20, 45);
+    border-radius: 1px;
 }
 .button_login :focus{
     outline: 0;
 }
-#div_container{
+#background{
     display: flex;
-    align-items: center;
     height: 100vh;
     width: 100vw;
-    background: url(../area_cadastro/imagens/23_FRD_BRS_599683.jpeg);
+    background: url(../cadastro/imagens/23_FRD_BRS_599683.jpeg);
     background-size: cover;
+    flex-direction: column;
 }
-
+#container{
+    background-color: white;
+    width: 450px;
+    height: 100vh;
+    overflow: auto;
+    margin: 0px;
+}
+#div_titulo{
+    background-color: rgb(0, 20, 45);
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 450px;
+    
+}
 .titulo_cadastro{
     display: flex;
-    position: relative;
-    top: 20px;
-    left: 11px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 30px;
 }
-#div_dados_do_usuario{
+#form{
     display: flex;
     flex-direction: column;
-    background-color: white;
     border-radius: 4px;
-    padding: 4px;
-    gap: 20px;
+    padding: 15px;
+    gap: 50px;
     width: 380px;
-    height: 850px;
-    margin-left: 20px;
+    height: 72%;
+    margin-left: 10px;
+    margin-top: 30px;
+    
+}
+#cepInvalido{
+    display: none;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: red;
+    left: 10px;
+    bottom: 15px;
 }
 #emailInvalido{
     display: none;
@@ -87,4 +121,52 @@ body {
     color: red;
     left: 10px;
     bottom: 15px;
+}
+.form_content{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    
+}
+
+.form_content label{
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: rgb(40, 40, 40);
+}
+
+.form_content input{
+    position: relative;
+    height: 35px;
+    border: solid 1.5px;
+    height: 25px;
+    width: 350px;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-color: rgb(40, 40, 40);
+}
+
+#localidade_uf{
+    position: relative;
+    top: 15px;
+    display: flex;
+    gap: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#input_Localidade{
+    height: 25px;
+    width: 100px;
+    border-radius: 4px;
+    border-color: rgb(40, 40, 40);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#input_UF{
+    height: 25px;
+    width: 40px;
+    border-radius: 4px;
+    border-color: rgb(40, 40, 40);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

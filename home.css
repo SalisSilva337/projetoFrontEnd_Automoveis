@@ -152,6 +152,7 @@ button:hover{
     width: 100%;
     background-color: transparent;
     color: gray;
+    justify-content: center;
 }
 
 .botoesLogin:hover{
