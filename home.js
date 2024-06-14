@@ -7,7 +7,7 @@ const botoesCategorias = document.querySelectorAll(".botoesCategorias");
 
 const botaoLogin = document.querySelector("#botaoLogin");
 const botaoCadastro = document.querySelector("#botaoCadastro");
-const usuarioLogado = document.querySelector("#usuarioLogado");
+
 
 const botaoFeedback = document.querySelector("#botaoFeedback");
 const modalFeedback = document.querySelector("#modalFeedback");
