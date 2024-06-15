@@ -12,14 +12,7 @@ const botaoEditar = document.querySelector("#botaoEditar");
 const botaoConfirmar = document.querySelector("#botaoConfirmar");
 const botaoPaginaInicial = document.querySelector("#botaoPaginaInicial");
 
-let request_infoUsuario = JSON.parse(sessionStorage.usuarioSessionStorage)
-console.log(request_infoUsuario);
-txtNome.value = request_infoUsuario.infoNome;
-txtEmail.value = request_infoUsuario.infoEmail;
-txtSenha.value = request_infoUsuario.infoSenha;
-txtCEP.value = request_infoUsuario.infoCEP;
-txtUF.value = request_infoUsuario.infoUF;
-txtLocalidade.value = request_infoUsuario.infoLocalidade;
+
 
 botaoEditar.addEventListener("click", (event) => {
     txtNome.disabled = false;
@@ -27,13 +20,41 @@ botaoEditar.addEventListener("click", (event) => {
     txtSenha.disabled = false;
     txtCEP.disabled = false;
 });
+
 botaoConfirmar.addEventListener("click", (event) => {
     txtNome.disabled = true;
     txtEmail.disabled = true;
     txtSenha.disabled = true;
     txtCEP.disabled = true;
+
+    let infoUsuario = {
+        "infoNome": txtNome.value,
+        "infoEmail": txtEmail.value,
+        "infoSenha": txtSenha.value,
+        "infoCEP": txtCEP.value,
+        "infoLocalidade": txtUF.value,
+        "infoUF": txtLocalidade.value
+    }
+
+    sessionStorage.usuarioSessionStorage = JSON.stringify(infoUsuario)
+
 });
 
 botaoPaginaInicial.addEventListener("click", (event)=>{
     window.location.href="../home.html"
 })
+
+
+
+let request_infoUsuario = JSON.parse(sessionStorage.usuarioSessionStorage)
+console.log(request_infoUsuario);
+
+
+txtNome.value = request_infoUsuario.infoNome;
+txtEmail.value = request_infoUsuario.infoEmail;
+txtSenha.value = request_infoUsuario.infoSenha;
+txtCEP.value = request_infoUsuario.infoCEP;
+txtUF.value = request_infoUsuario.infoUF;
+txtLocalidade.value = request_infoUsuario.infoLocalidade;
+
+

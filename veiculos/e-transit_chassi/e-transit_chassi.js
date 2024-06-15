@@ -36,8 +36,13 @@ const branco = document.querySelector("#branco");
 const prata = document.querySelector("#prata");
 
 branco.addEventListener("click", () => {
-    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/transit-chassi/colorizer/blanco-oxford/fbr-transit-chasis-banner-coloriser.jpg.dam.full.high.jpg/1694008186959.jpg"
+    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/e-transit/chassi/overview/colorizer/branco-oxford/fbr-e-transit-chassi-colorizer-branco-oxford.jpg.dam.full.high.jpg/1713792719562.jpg"
     nomeCor.textContent = "Branco Oxford"
+})
+
+prata.addEventListener("click", () => {
+    imgCorVeiculo.src = "https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/e-transit/chassi/overview/colorizer/prata-lunar/fbr-e-transit-chassi-colorizer-prata-lunar.jpg.dam.full.high.jpg/1713792714778.jpg"
+    nomeCor.textContent = "Prata Lunar"
 })
 
 

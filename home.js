@@ -4,7 +4,7 @@ const imgSlider = document.querySelector("#imgSlider");
 const botaoProximo = document.querySelector("#botaoProximo");
 const botaoAnterior = document.querySelector("#botaoAnterior");
 const botoesCategorias = document.querySelectorAll(".botoesCategorias");
-
+const usuarioLogado = document.querySelector("#usuarioLogado")
 const botaoLogin = document.querySelector("#botaoLogin");
 const botaoCadastro = document.querySelector("#botaoCadastro");
 

@@ -4,7 +4,7 @@ const loginContainer = document.querySelector("#loginContainer")
 const mensagemContainer = document.querySelector("#mensagemContainer")
 const mensagemForm = document.querySelector("#mensagemForm")
 const mensagemInput = document.querySelector("#mensagemInput")
-const usuarioLogado = document.querySelector("#usuarioLogado")
+
 const botaoIngressar = document.querySelector("#botaoIngressar")
 const botaoEnviar = document.querySelector("#botaoEnviar")
 
