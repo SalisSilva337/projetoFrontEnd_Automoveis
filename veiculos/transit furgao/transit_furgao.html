@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transit Minibus</title>
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="https://kit.fontawesome.com/995dcfb715.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../../imgs/inicial/faviconFord.webp" type="image/x-icon">
+    <script src="transit_furgao.js" defer></script>
+</head>
+<header>
+    <div id="divHeader">
+        <nav id="navHeader">
+
+            <div class="dropdownAll" id="dropdownCategoriaVeiculos">
+                <button class="botoesHeader">Veículos</button>
+                <div class="dropdownVeiculos">
+                    <div id="dropdownBotoes">
+                        <button class="botoesVeiculos" id="botaoSuv">SUV's</button>
+                        <button class="botoesVeiculos" id="botaoPicapes">Picapes</button>
+                        <button class="botoesVeiculos" id="botaoEletricos">Elétricos</button>
+                        <button class="botoesVeiculos" id="botaoPerformance">Performance</button>
+                        <button class="botoesVeiculos" id="botaoComercial">Comercial</button>  
+                    </div>
+
+                        <div id="divSuv" class="divVeiculos">
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-territory/showroom/fbr-territory-showroom.png.dam.full.high.png/1693228444884.png" alt="" class="imgVeiculos">
+                                <h2>Novo Territory</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2023/bronco-sport/showroom/fbr-showroom-bronco.jpg.dam.full.high.jpg/1690303977561.jpg" alt="" class="imgVeiculos">
+                                <h2>Bronco Sport</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2023/mustang-mach-e/showroom/fbr-showroom-mustang-mach-e.jpg.dam.full.high.jpg/1697465325962.jpg" alt="" class="imgVeiculos">
+                                <h2>Mustang Mach-E</h2>
+                            </div>
+                        </div>
+
+                        <div id="divPicapes" class="divVeiculos">
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/nova-ranger/showroom/fbr-showroom-ranger-p703-v2.png.dam.full.high.png/1691681133806.png" alt="" class="imgVeiculos">
+                                <h2>Nova Geração Ranger</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/ranger-raptor/showroom/fbr-showroom-ranger-raptor.jpg.dam.full.high.jpg/1700832163575.jpg" alt="" class="imgVeiculos">
+                                <h2>Ranger Raptor</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/maverick/models/fx4/fbr-showroom-maverick.jpg.dam.full.high.jpg/1712867686782.jpg" alt="" class="imgVeiculos">
+                                <h2>Maverick</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/maverick/models/hybrid/fbr-showroom-maverick%20hibrida.jpg.dam.full.high.jpg/1712867691940.jpg" alt="" class="imgVeiculos">
+                                <h2>Maverick Híbrido</h2>
+                            </div>
+                        </div>
+
+
+                        <div id="divEletricos" class="divVeiculos">
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2023/maverick/models/lariat-hybrid/showroom/fbr-showroom-maverick-hibrida.jpg.dam.full.high.jpg/1695245564147.jpg" alt="" class="imgVeiculos">
+                                <h2>Maverick Hybrid</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2023/mustang-mach-e/showroom/fbr-showroom-mustang-mach-e.jpg.dam.full.high.jpg/1697465325962.jpg" alt="" class="imgVeiculos">
+                                <h2>Mustang Mach-E
+                                </h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/e-transit/chassi/showroom/fbr-showroom-e-transit-chassi.jpg.dam.full.high.jpg/1713654598785.jpg" alt="" class="imgVeiculos">
+                                <h2>E-Transit Chassi</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/e-transit/furgao/showroom/fbr-showroom-e-transit-furgao.jpg.dam.full.high.jpg/1713654651990.jpg" alt="" class="imgVeiculos">
+                                <h2>E-Transit Furgão</h2>
+                            </div>
+                        </div>
+
+
+                        <div id="divPerformance" class="divVeiculos">
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/mustang/showroom/fbr-showroom-mustang-gt.jpg.dam.full.high.jpg/1711468567641.jpg" alt="" class="imgVeiculos">
+                                <h2>Mustang GT</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2023/mustang-mach-e/showroom/fbr-showroom-mustang-mach-e.jpg.dam.full.high.jpg/1697465325962.jpg" alt="" class="imgVeiculos">
+                                <h2>Mustang Mach-E</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/ranger-raptor/showroom/fbr-showroom-ranger-raptor.jpg.dam.full.high.jpg/1700832163448.jpg" alt="" class="imgVeiculos">
+                                <h2>Ranger Raptor</h2>
+                            </div>
+                        </div>
+
+                        <div id="divComercial" class="divVeiculos">
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2023/transit-minibus/showroom/fbr-showroom-transit-minibus.jpg.dam.full.high.jpg/1690303967271.jpg" alt="" class="imgVeiculos">
+                                <h2>Transit Minibus</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2023/transit-furgao/showroom/fbr-showroom-transit-furgao.jpg.dam.full.high.jpg/1690303970405.jpg" alt="" class="imgVeiculos">
+                                <h2>Transit Furgão</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/e-transit/furgao/showroom/fbr-showroom-e-transit-furgao.jpg.dam.full.high.jpg/1713654651990.jpg" alt="" class="imgVeiculos">
+                                <h2>E-Transit Furgão</h2>
+                            </div>
+
+                            <div class="divCadaItem">
+                                <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2024/transit-chassi/showroom/fbr-showroom-transit-chassi.png.dam.full.high.png/1694008075359.png" alt="" class="imgVeiculos">
+                                <h2>Transit Chassi</h2>
+                            </div>
+                            
+                        </div>
+
+                </div>
+            </div>
+
+            <div class="dropdownAll" id="dropdownCategoriaServicos" >
+                <button class="botoesHeader">Suporte & Serviços</button>
+                <div class="dropdownSuporteServicos">
+                    <div id="dropdownBotoesSuporteServicos">
+                        <a href="../../assistencia24hs/assistencia.html"><button class="botoesSuporteServicos">Assistência 24hs</button></a>
+                        <a href="../../tabelaFipe/fipe.html"><button class="botoesSuporteServicos">Tabela Fipe</button></a>
+                    </div>
+                </div>
+            </div>
+            
+        </nav>
+        
+        <div id="divLogo">
+            <img src="../../imgs/inicial/ford.svg" id="fordLogo">
+        </div>
+        
+
+        <nav id="navLogin">
+            <div class="dropdownAll" id="dropdownLogin">
+                
+                <button class="botoesHeader" id="botaoLogin"><i class="fa-regular fa-circle-user fa-xl"></i></button>
+                <h3 id="usuarioLogado"></h3>
+                <div class="dropdownLoginAll">
+                    <div id="dropdownBotoesLogin">
+                        <a href="../../login/login.html"><button class="botoesLogin">Log-in</button></a>
+                        <a href="../../cadastro/pagina_login.html"><button class="botoesLogin">Cadastrar-se</button></a>
+                    </div>
+                </div>
+            </div>
+           
+        </nav>
+
+    </div>
+</header>
+<body>
+    <div id="divSlider">
+        <img src="imgs/transit furgao.jpeg" alt="" id="imgSlider">
+
+        <div id="divLocalizarConcessionaria">
+            <i class="fa-solid fa-location-dot fa-xl" id="localizar"></i>
+        </div>
+
+        <div id="divBotoesSlider">
+            <button class="botoesSlider"  id="botaoAnterior"><</button>
+            <h2 id="posicaoImg">1/4</h2>
+            <button class="botoesSlider" id="botaoProximo">></button>
+        </div>
+        <div id="infoSlider">
+            <h1>Transit Furgão</h1>
+            <h2>R$274.500,00</h2>
+        </div>
+    </div>
+
+    <div id="divIframeMaps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62940.78769399083!2d-35.78523463938763!3d-9.612548611210952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x70145978d696c55%3A0x75ba0b570478f8b0!2sFord%20Gama!5e0!3m2!1spt-BR!2sbr!4v1718143513282!5m2!1spt-BR!2sbr" class="iframeMaps"></iframe>
+    </div>
+    <h1 id="principaisCaracteristicas">PRINCIPAIS CARACTERÍSTICAS</h1>
+
+    <div id="infoVeiculo">
+        
+        <div class="infos">
+            <section class="secoesInfo">
+                <h1>Motor:</h1>
+                <h3><li>Diesel Ecoblue® 2.0L"</li></h3>
+            </section>
+        </div>
+        <div class="linha"></div>
+        <div class="infos">
+            <section class="secoesInfo">
+                <h1>Performance:</h1>
+                <h3><li>Potência (cv) 165a</li></h3>
+                <h3><li>Torque 39,7 kgf.m</li></h3>
+                <h3><li>Transmissão Manual e Automática</li></h3>
+                <h3><li>Tração Traseira</li></h3>
+            </section>
+        </div>
+        <div class="linha"></div>
+        <div class="infos">
+            <section class="secoesInfo">
+                <h1>Tecnologias:</h1>
+                <h3><li>Central Multimidia Sync Move com tela de 8”</li></h3>
+            </section>
+        </div>
+
+    </div>
+
+    <div id="veiculoCores">
+        <div id="cabecalhoCores">
+            <h1 id="textoCores">Cores</h1>
+            <h3 id="disponibilidadeCor">Disponível em</h3>
+            <h2 id="nomeCor">Prata Lunar</h2>
+        </div>
+
+        <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2022/transit-furgao/colorizer/prata-lunar/fbr-furgao-color-cinza.jpg.dam.full.high.jpg/1650489668894.jpg" id="imgCorVeiculo">
+
+        <div id="coresDisponiveis">
+            <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2022/transit-furgao/colorizer/prata-lunar/btn-plata-lunar.png.dam.full.high.png/1650489668820.png" alt="" id="branco">
+            <img src="https://www.ford.com.br/content/dam/Ford/website-assets/latam/br/nameplate/2022/transit-furgao/colorizer/branco-oxford/btn-blanco-oxford.png.dam.full.high.png/1650489672957.png" alt="" id="prata">
+        </div>
+    </div>
+
+    <div id="maisDetalhes">
+        <h1>MAIS DETALHES:</h1>
+    </div>
+
+    <div id="detalhesVeiculos">
+        <div class="cadaDetalhe">
+            <img src="https://www.ford.com.br/content/ford/br/pt_br/home/veiculos-comerciais/transit-furgao/jcr:content/par/splitter/splitter2/image/image.imgs.full.high.jpg/1678122602667.jpg" alt="">
+            <h1>DIREÇÃO ELÉTRICA</h1>
+            <h3>Uma condução leve e confortável que ajuda na redução de consumo de combustível, pensado para você fazer menos esforço ao dirigir.</h3>
+        </div>
+
+        <div class="cadaDetalhe">
+            <img src="https://www.ford.com.br/content/ford/br/pt_br/home/veiculos-comerciais/transit-furgao/jcr:content/par/splitter/splitter21/image/image.imgs.full.high.jpg/1678122263746.jpg" alt="">
+            <h1>TRAÇÃO TRASEIRA</h1>
+            <h3>Menos manutenção e mais tempo para investir em você. A tração traseira entrega robustez e equilíbrio dinâmico, enquanto minimiza o desgaste de pneus, direção e suspensão.</h3>
+        </div>
+
+        <div class="cadaDetalhe">
+            <img src="https://www.ford.com.br/content/ford/br/pt_br/home/veiculos-comerciais/transit-furgao/jcr:content/par/splitter/splitter1/image/image.imgs.full.high.jpg/1678915056478.jpg" alt="">
+            <h1>TRANSMISSÃO AUTOMÁTICA</h1>
+            <h3>A primeira com Transmissão Automática chega com 10 velocidades aumentando o conforto, robustez e melhorando os custos de operação.</h3>
+        </div>
+
+        <div class="cadaDetalhe">
+            <img src="https://www.ford.com.br/content/ford/br/pt_br/home/veiculos-comerciais/transit-furgao/jcr:content/par/splitter/splitter20/image/image.imgs.full.high.jpg/1678122427210.jpg" alt="">
+            <h1>ESP ADVANCETRAC ®</h1>
+            <h3>A Transit é equipada com Controle Eletrônico de Estabilidade e anti-capotamento, controle de carga adaptativo, estabilização de vento lateral, assistente de partida em rampas e muito mais para garantir a segurança que você e o seu negócio precisa.</h3>
+        </div>
+    </div>
+</body>
+<footer>
+    <div id="divFooter">
+
+        <div id="divLogoFooter">
+            <a href="../../home.html"><img src="../../imgs/inicial/ford.svg" id="fordLogoFooter"></img></a>
+        </div>
+        
+        <nav id="navRedesSociais">
+            <h2>Siga a Ford</h2>
+            <a href="https://x.com/ford"><i id="redesSociais" class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/user/ford"><i id="redesSociais" class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/ford"><i id="redesSociais" class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ford/"><i id="redesSociais" class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@ford"><i id="redesSociais" class="fa-brands fa-tiktok"></i></a>
+        </nav>
+
+    </div>
+</footer>
+</html>
