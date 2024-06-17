@@ -13,11 +13,33 @@ const botaoEnviar = document.querySelector("#botaoEnviar")
 
 
 botaoIngressar.addEventListener("click", () => {
+    
+    const name = usuarioLogado.textContent
+    // if (name === "") {
+    //     alert("Registre-se para usar o chat")
+    // }
     loginContainer.style.display = "none"
     mensagemInput.disabled = false
-    const name = usuarioLogado.textContent
     appendMessage(name + " (Você) Ingressou")
     socket.emit("new-user", name)
+
+    setTimeout(() => {
+        appendMessage("Olá" + name + "!")
+    }, 500);
+    
+    setTimeout(() => {
+        appendMessage("Por qual motivo você acionou o suporte da Ford?")
+
+        appendMessage("1. Problemas com o seu veiculo Ford \n 2. Problemas com a aba veiculos \n 3. Problemas com a assistência 24hs \n 4. Problemas com a tabela fipe ")
+    }, 1200);
+
+   
+
+    // if (name !== "") {
+       
+    // }
+    
+    
 })
     
 
@@ -51,6 +73,45 @@ botaoEnviar.addEventListener("click", e => {
     socket.emit("send-chat-message", message)
     mensagemInput.value = ""
     mensagemContainer.scrollTo(0, mensagemContainer.scrollHeight)
+
+    if (message === "1") {
+        setTimeout(() => {
+            appendMessage("Qual dessas opções abaixo mais se assemelha com a sua problemática com o veiculo?") 
+        }, 1200);
+        
+        setTimeout(() => {
+            appendMessage("A) Mal funcionamento do motor \n B) Desgaste rápido de peça(s) \n C) Sync não funciona")
+        }, 2000);
+
+        if (message === "a" || "A") {
+                setTimeout(() => {
+                    appendMessage("Ok, enviaremos o seu relato para a equipe de suporte")
+                }, 1200);
+                setTimeout(() => {
+                    appendMessage("Obrigado por fazer parte da família Ford")
+                }, 2200);
+        }
+    
+        
+
+    }
+
+    if (message === "2") {
+        setTimeout(() => {
+            appendMessage("VAI TOMAR NO CU") 
+        }, 1200);
+    }
+
+    if (message === "3") {
+        setTimeout(() => {
+            appendMessage("VAI TOMAR NO CU") 
+        }, 1200);
+    }
+    if (message === "4") {
+        setTimeout(() => {
+            appendMessage("VAI TOMAR NO CU") 
+        }, 1200);
+    }
 })
 
 

@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+#paginaInicial{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    border: 0;
+    background-color: rgb(88, 88, 192);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 300ms all;
+}
+
+#paginaInicial:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#interior{
+    width: 100%;
+}
+
+#sync{
+    background-image: url(imgs/gradient.jpg);
+    background-size: 300%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 43vh;
+    height: 63vh;
+    top: 11vh;
+    right: 21.7vh;
+    border-radius: 10px;
+    gap: 100px;
+    outline: 5px solid rgb(30, 30, 30);
+    overflow: hidden;
+    animation: backgroundAnim 60s infinite alternate;
+}
+
+@keyframes backgroundAnim {
+    from {
+        background-position: left;
+    }
+    to {
+        background-position: right;
+    }
+}
+
+#syncHeader{
+    width: 42vh;
+    position: absolute;
+    z-index: 4;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: left;
+    gap: 10px;
+}
+
+#syncFooter{
+    width: 42vh;
+    height: 3vh;
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#syncFooter button{
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 20px;
+    border: 0;
+}
+
+
+
+#syncFooter button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#syncHeader img{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(137deg) brightness(103%) contrast(101%);
+}
+
+#divApps{
+    padding-left: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.apps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apps h3{
+   font-size: 10px;
+}
+
+.appsImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.appsImg:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+iframe{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 59vh;
+    padding-bottom: 10px;
+    width: 43vh;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
