@@ -5,10 +5,34 @@ const fecharModal = document.querySelector("#fecharModal");
 const divConteudoCarros = document.querySelector("#divConteudoCarros");
 const divCadaVeiculo = document.querySelectorAll(".divCadaVeiculo");
 const divConteudoCaminhoes = document.querySelector("#divConteudoCaminhoes");
-
+const desativado = document.querySelectorAll(".desativado")
+const setas = document.querySelectorAll(".setas")
+const botoesFipeInfo = document.querySelectorAll(".botoesFipeInfo")
 const imgVeiculos = document.querySelectorAll(".imgVeiculos");
 
+for (let index = 0; index < desativado.length; index++) {
 
+    botoesFipeInfo[index].addEventListener("click", () => {
+
+        if (index === 0) {
+            desativado[0].classList.toggle("ativado")
+            setas[0].classList.toggle("rodar")
+        }
+
+        if (index === 1) {
+            desativado[1].classList.toggle("ativado")
+            setas[1].classList.toggle("rodar")
+        }
+
+        if (index === 2) {
+            desativado[2].classList.toggle("ativado")
+            setas[2].classList.toggle("rodar")
+        }
+        
+
+    })
+
+}
 
 botaoVoltar.addEventListener("click", function () {
     window.location.href = "";

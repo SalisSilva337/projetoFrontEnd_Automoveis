@@ -54,10 +54,15 @@ body{
     width: 100%;
     height: 510px;
     border: 1px solid black;
-    background-color: rgb(0, 20, 45);
+    background-color: #00142d;
     color: white;
 }
 
+#wave{
+    position:relative;
+    left: 0;
+    top: -100px;
+}
 
 #acionarFord{
     padding-left: 10px;
