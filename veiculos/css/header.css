@@ -139,6 +139,7 @@
     border: 0px;
     border-bottom: 3px solid rgb(148, 96, 193);
     color: rgb(148, 96, 193) ;
+    cursor: pointer;
 }
 
 .botoesVeiculos:focus{
@@ -233,6 +234,7 @@
     border: 0px;
     border-bottom: 3px solid rgb(148, 96, 193);
     color: rgb(148, 96, 193) ;
+    cursor: pointer;
 }
 
 #divHeader:hover{
@@ -278,6 +280,11 @@
     height: 100px;
     border: 0px;
     font-size: large;
+
+}
+
+.botoesHeader:hover{
+    cursor: pointer;
 
 }
 
