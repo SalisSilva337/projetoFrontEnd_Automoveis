@@ -555,6 +555,7 @@ a{
     background-color: rgb(108, 70, 141);
     color: rgb(255, 255, 255);
     width: max-content;
+    max-width: 300px;
     border-radius: 10px;
     padding: 10px;
     margin-left: auto;
@@ -565,6 +566,7 @@ a{
     position: relative;
     background-color: rgb(60, 255, 0);
     width: max-content;
+    max-width: 300px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 1px 1px 10px rgb(0, 0, 0,0.5);
@@ -575,6 +577,7 @@ a{
     position: relative;
     background-color: rgb(255, 0, 0);
     width: max-content;
+    max-width: 300px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 1px 1px 10px rgb(0, 0, 0,0.5);
@@ -633,6 +636,30 @@ a{
     border-radius: 10px;
 }
 
+#alertaNome{
+    position: fixed;
+    display: none;
+    z-index: 3;
+    width: 400px;
+    height: 200px;
+    right: 20px;
+    top: 20px;
+    background-color: rgba(255, 0, 0);
+    color: white;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+@keyframes alertaAnim {
+    from{
+        scale: 0;
+    }
+    to{
+        scale: 1;
+    }
+}
 #modalConteudoFeedback{
     width: 700px;
     height: 800px;

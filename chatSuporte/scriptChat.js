@@ -7,7 +7,7 @@ const mensagemInput = document.querySelector("#mensagemInput")
 
 const botaoIngressar = document.querySelector("#botaoIngressar")
 const botaoEnviar = document.querySelector("#botaoEnviar")
-
+const alertaNome = document.querySelector("#alertaNome")
 
 
 
@@ -16,7 +16,14 @@ botaoIngressar.addEventListener("click", function fodase() {
     const name = usuarioLogado.textContent
 
     if (name === "") {
-        alert("Registre-se para usar o chat")
+
+        alertaNome.style.display = "flex"
+        alertaNome.style.animation = "alertaAnim 1s"
+        setTimeout(() => {
+            alertaNome.style.display = "none"
+            alertaNome.style.animation = ""
+        }, 2000);
+       
     }
 
     if (name !== "") {
