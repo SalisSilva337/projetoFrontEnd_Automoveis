@@ -74,6 +74,12 @@ button:hover{
 .imgVeiculos{
     width: 300px;
     border-radius: 10px;
+
+}
+
+.imgVeiculos:hover{
+    opacity: 0.7;
+    
 }
 
 .botoesVeiculos:hover{
@@ -136,6 +142,7 @@ button:hover{
     padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgb(0, 0, 0,0.3);
+    animation: dropdownAnim 1s;
 }
 
 #dropdownBotoesLogin{
@@ -335,6 +342,20 @@ button:hover{
     width: 1055px;
     height: 100%;
     border-radius: 10px;
+    animation: appear ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 #nomeCategorias{
@@ -351,6 +372,7 @@ button:hover{
     align-items: center;
     gap: 100px;
     font-size: larger;
+    
 }
 
 #divServicos img{
@@ -362,6 +384,9 @@ button:hover{
     display: flex;
     flex-direction:row;
     gap: 70px;
+    animation: appear ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
 }
 
 #divCategoriasServicos img{
@@ -394,6 +419,7 @@ button:hover{
     background-color: rgb(148, 96, 193);
     color: white;
     border: 0px;
+    transition: 400ms;
 }
 
 .botoesServicos:hover{
@@ -514,6 +540,8 @@ a{
     border-radius: 100px;
     background-color: transparent;
 }
+
+
 
 #botaoChat{
     position: relative;

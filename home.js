@@ -107,9 +107,6 @@ const divEletricos = document.querySelector("#divEletricos")
 const divPerformance = document.querySelector("#divPerformance")
 const divComercial = document.querySelector("#divComercial")
 
-// window.addEventListener("load", () => {
-//     divSuv.style.display = "flex"
-// })
 
 botaoSuv.addEventListener("click", () => {
     divSuv.style.display = "flex"
