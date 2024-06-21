@@ -69,6 +69,7 @@ for (let index = 0; index < botoesCategorias.length; index++) {
 
 botaoChat.addEventListener("click", () => {
     chatSuporte.classList.toggle("ativado")
+    chatSuporte.style.animation = "chatAnim 1s"
 })
 
 

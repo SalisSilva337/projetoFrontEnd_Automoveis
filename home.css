@@ -541,7 +541,15 @@ a{
     background-color: transparent;
 }
 
-
+@keyframes chatAnim {
+    from {
+        right: -10px;
+    }
+    
+    to {
+        right: 0;
+    }
+}
 
 #botaoChat{
     position: relative;
