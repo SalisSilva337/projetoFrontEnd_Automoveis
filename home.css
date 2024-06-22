@@ -543,12 +543,17 @@ a{
 
 @keyframes chatAnim {
     from {
-        right: -10px;
+        right: -500px;
+      
     }
     
     to {
-        right: 0;
+        
     }
+}
+
+a {
+    text-decoration: none;
 }
 
 #botaoChat{
